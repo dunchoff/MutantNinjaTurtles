@@ -1,0 +1,102 @@
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    background: green;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+  
+li {
+    color: #fff;
+    background: green;
+    text-align: center;
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 16px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+    
+li a {
+    color: #fff;
+}
+  
+li:hover {
+    cursor: pointer;
+}
+
+.mike:hover {
+    background:orange;
+}
+
+.leo:hover {
+    background:blue;
+}
+
+.don:hover {
+    background:purple;
+}
+
+.rafa:hover {
+    background:red;
+}
+
+
+ul li ul {
+    background: rgb(223, 222, 222);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 80px;
+    justify-content: center;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 16px;
+    left: 0;
+    display: none;
+}
+  
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+  
+ul li ul li {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.splin{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.turt{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.lyuk{
+    position: fixed;
+    left: 800px;
+    bottom: 0;
+
+    width: 400px;
+    height: 400px;
+}
